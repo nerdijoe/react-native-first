@@ -10,7 +10,9 @@ const styles = {
   navbar: {
     margin: 0,
     padding: 10,
-    backgroundColor: '#EDB1F1'
+    backgroundColor: '#EDB1F1',
+    flexDirection: 'row',
+    justifyContent: 'space-around'
   }
 }
 

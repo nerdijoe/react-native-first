@@ -13,6 +13,13 @@ import Footer from './components/Footer'
 import Navbar from './components/Navbar'
 import ArenaList from './components/ArenaList'
 
+const styles = {
+  barTitle: {
+    backgroundColor: '#8EF6E4',
+
+  }
+}
+
 class App extends React.Component {
   render() {
     return (
@@ -28,8 +35,8 @@ class App extends React.Component {
         <Navbar />
 
         <Router>
-           <Scene key="cards" component={CardList} title="Cards" initial={true} />
-           <Scene key="arenas" component={ArenaList} title="Arenas" />
+           <Scene key="cards" component={CardList} title="Cards" initial={true} navigationBarStyle={styles.barTitle} />
+           <Scene key="arenas" component={ArenaList} title="Arenas" navigationBarStyle={styles.barTitle} />
        </Router>
 
         <Footer />

@@ -13,23 +13,26 @@ import {
 
 const styles = {
   cardImage: {
-    width: 212/3,
-    height: 263/3
+    width: 212/4,
+    height: 263/4
   },
   container: {
     display: 'flex',
     padding: 20,
-  
+    marginTop: 40,
+    marginBottom: 30
+
   },
   card: {
     backgroundColor: 'white',
     flexDirection: 'row',
     margin: 5,
     borderRadius: 8,
-    borderStyle: 'solid'
+    borderStyle: 'solid',
+    alignItems: 'center'
   },
   cardDesc: {
-    fontSize: 30,
+    fontSize: 20,
     padding: 10
   }
 }
@@ -47,7 +50,7 @@ class CardList extends React.Component {
                 style={styles.cardImage}
                 source={{uri: `http://www.clashapi.xyz/images/cards/${card.idName}.png`}}
               />
-              <Text style={styles.cardDesc}>{card.idName}</Text>
+              <Text style={styles.cardDesc}>{card.name}</Text>
             </TouchableOpacity>
           )
         })}
