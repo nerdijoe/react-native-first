@@ -5,17 +5,23 @@ import {
   Image
 } from 'react-native'
 
+import FadeInView from './components/FadeInView'
+import CardList from './components/CardList'
+
 class App extends React.Component {
   render() {
     return (
-      <View>
-        <Text>
-          App
-        </Text>
-        <Image
-          source={{uri: 'https://media.giphy.com/media/zdIGTIdD1mi4/giphy.gif'}}
-          style={{width:200, height: 100}}
-        />
+      <View style={{flex: 1}}>
+
+        <FadeInView style={{ width: '100%', height: '33%', backgroundColor: 'powderblue'}}>
+            <Image
+              source={{uri: 'http://descargarclashroyalegratis.net/wp-content/uploads/2016/04/clash-min.jpg'}}
+              style={{width:1200/2.9, height: 630/2.9}}
+            />
+        </FadeInView>
+
+        <CardList/>
+
       </View>
     )
   }
