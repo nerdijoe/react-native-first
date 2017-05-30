@@ -20,7 +20,7 @@ const initialState = {
   ]
 }
 
-const passwordReducer = (state=initialState, action) => {
+const cardReducer = (state=initialState, action) => {
   switch(action.type) {
     case FETCH_DATA: {
       return state
@@ -30,4 +30,4 @@ const passwordReducer = (state=initialState, action) => {
 }
 
 
-export default passwordReducer
+export default cardReducer

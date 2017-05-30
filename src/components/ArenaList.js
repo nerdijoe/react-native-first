@@ -13,44 +13,47 @@ import {
 
 const styles = {
   cardImage: {
-    width: 212/4,
-    height: 263/4
+    width: 518/3,
+    height: 539/3
   },
   container: {
     display: 'flex',
-    padding: 20,
-    marginTop: 40,
-    marginBottom: 30
+    padding: 10,
+    marginTop: 50,
+    marginBottom: 30,
+    flexWrap: 'wrap',
+
 
   },
   card: {
     backgroundColor: 'white',
-    flexDirection: 'row',
+    flexDirection: 'column',
     margin: 5,
     borderRadius: 8,
     borderStyle: 'solid',
-    alignItems: 'center'
+    borderWidth: 1
+
   },
   cardDesc: {
-    fontSize: 20,
+    fontSize: 15,
     padding: 10
   }
 }
 
-class CardList extends React.Component {
+class ArenaList extends React.Component {
 
   render() {
     return (
       <View style={{flex: 1}}>
         <ScrollView style={styles.container}>
-        {this.props.cards.map( card => {
+        {this.props.arenas.map( arena => {
           return (
-            <TouchableOpacity key={card._id} style={styles.card}>
+            <TouchableOpacity key={arena._id} style={styles.card}>
               <Image
                 style={styles.cardImage}
-                source={{uri: `http://www.clashapi.xyz/images/cards/${card.idName}.png`}}
+                source={{uri: `http://www.clashapi.xyz/images/arenas/${arena.idName}.png`}}
               />
-              <Text style={styles.cardDesc}>{card.name}</Text>
+              <Text style={styles.cardDesc}>{arena.name}</Text>
             </TouchableOpacity>
           )
         })}
@@ -64,9 +67,9 @@ class CardList extends React.Component {
 
 const mapStateToProps = (state) => {
   return {
-    cards: state.cardReducer.data
+    arenas: state.arenaReducer.data
   }
 }
 
-const connectedCardList = connect(mapStateToProps, null)(CardList)
-export default connectedCardList
+const connectedArenaList = connect(mapStateToProps, null)(ArenaList)
+export default connectedArenaList
