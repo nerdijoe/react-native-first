@@ -13,25 +13,29 @@ import {
 
 const styles = {
   cardImage: {
-    width: 212/4,
-    height: 263/4
+    width: 518/3,
+    height: 539/3
   },
   container: {
     display: 'flex',
-    padding: 20,
-    marginTop: 40,
-    marginBottom: 30
+    padding: 10,
+    marginTop: 50,
+    marginBottom: 30,
+    flexWrap: 'wrap',
+
 
   },
   card: {
     backgroundColor: 'white',
-    flexDirection: 'row',
+    flexDirection: 'column',
     margin: 5,
     borderRadius: 8,
-    borderStyle: 'solid'
+    borderStyle: 'solid',
+    borderWidth: 1
+
   },
   cardDesc: {
-    fontSize: 30,
+    fontSize: 15,
     padding: 10
   }
 }
