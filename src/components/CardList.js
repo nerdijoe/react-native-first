@@ -13,8 +13,23 @@ import {
 
 const styles = {
   cardImage: {
-    width: 212/2,
-    height: 263/2
+    width: 212/3,
+    height: 263/3
+  },
+  container: {
+    display: 'flex',
+    padding: 20,
+  },
+  card: {
+    backgroundColor: 'white',
+    flexDirection: 'row',
+    margin: 5,
+    borderRadius: 8,
+    borderStyle: 'solid'
+  },
+  cardDesc: {
+    fontSize: 30,
+    padding: 10
   }
 }
 
@@ -22,17 +37,16 @@ class CardList extends React.Component {
 
   render() {
     return (
-      <View>
-        <Text>CardList</Text>
-        <ScrollView>
+      <View style={{flex: 1}}>
+        <ScrollView style={styles.container}>
         {this.props.cards.map( card => {
           return (
-            <TouchableOpacity key={card._id}>
+            <TouchableOpacity key={card._id} style={styles.card}>
               <Image
                 style={styles.cardImage}
                 source={{uri: `http://www.clashapi.xyz/images/cards/${card.idName}.png`}}
               />
-              <Text>{card.idName}</Text>
+              <Text style={styles.cardDesc}>{card.idName}</Text>
             </TouchableOpacity>
           )
         })}

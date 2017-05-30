@@ -11,17 +11,12 @@ import CardList from './components/CardList'
 class App extends React.Component {
   render() {
     return (
-      <View>
-        <Text>
-          App
-        </Text>
-        <Text style={{fontSize: 28, textAlign: 'center', margin: 10}}>Fading in</Text>
+      <View style={{flex: 1}}>
 
-
-        <FadeInView style={{width: 350, height: 150, backgroundColor: 'powderblue'}}>
+        <FadeInView style={{ width: '100%', height: '33%', backgroundColor: 'powderblue'}}>
             <Image
-              source={{uri: 'https://media.giphy.com/media/zdIGTIdD1mi4/giphy.gif'}}
-              style={{width:400, height: 150}}
+              source={{uri: 'http://descargarclashroyalegratis.net/wp-content/uploads/2016/04/clash-min.jpg'}}
+              style={{width:1200/2.9, height: 630/2.9}}
             />
         </FadeInView>
 
