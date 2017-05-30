@@ -7,11 +7,15 @@ import {
 
 const styles = {
   myFooter: {
+    display: 'flex',
     margin: 5,
-    padding: 5
+    padding: 3,
+    flexDirection: 'row',
+    justifyContent: 'flex-end'
   },
   footerText: {
-    fontSize: 10
+    fontSize: 7,
+
   }
 }
 
@@ -20,7 +24,7 @@ class Footer extends React.Component {
   render() {
     return (
       <View style={styles.myFooter}>
-        <Text style={styles.footerText}>Footer</Text>
+        <Text style={styles.footerText}>© 2017, クラロワ大好きです。</Text>
       </View>
     )
   }

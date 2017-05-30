@@ -23,7 +23,7 @@ const initialState = {
 const cardReducer = (state=initialState, action) => {
   switch(action.type) {
     case FETCH_DATA: {
-      return state
+      return {...state, data: action.cards}
     }
     default: return state
   }

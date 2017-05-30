@@ -9,7 +9,7 @@ import {
   FlatList,
   ScrollView
 } from 'react-native'
-
+import { Actions } from 'react-native-router-flux'
 
 const styles = {
   cardImage: {
@@ -43,6 +43,10 @@ const styles = {
 }
 
 class ArenaList extends React.Component {
+  onPressHandler(arena) {
+    console.log("onPressHandler card_id=" + arena._id)
+    Actions.adetail({arena: arena})
+  }
 
   render() {
     return (
@@ -51,7 +55,7 @@ class ArenaList extends React.Component {
           <View style={styles.container}>
             {this.props.arenas.map( arena => {
               return (
-                <TouchableOpacity key={arena._id} style={styles.card}>
+                <TouchableOpacity key={arena._id} style={styles.card} onPress={() => {this.onPressHandler(arena)}}>
                   <Image
                     style={styles.cardImage}
                     source={{uri: `http://www.clashapi.xyz/images/arenas/${arena.idName}.png`}}
