@@ -1,5 +1,6 @@
 import {
   FETCH_DATA,
+  FETCH_DATA_ARENA
 } from './constants'
 
 export const fetchData = (cards) => {
@@ -19,6 +20,27 @@ export const actionFetchData = () => {
       console.log('actionFetchData')
       console.log(res)
       dispatch(fetchData(res))
+    })
+  }
+}
+
+export const fetchDataArena = (arenas) => {
+  return {
+    type: FETCH_DATA_ARENA,
+    arenas
+  }
+}
+
+export const actionFetchDataArenas = () => {
+
+  return(dispatch) => {
+    console.log('actionFetchDataArenas');
+    fetch('http://www.clashapi.xyz/api/arenas')
+    .then( res => res.json() )
+    .then (res => {
+      console.log('actionFetchDataArenas')
+      console.log(res)
+      dispatch(fetchDataArena(res))
     })
   }
 }

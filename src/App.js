@@ -7,7 +7,7 @@ import {
 import { Router, Scene } from 'react-native-router-flux';
 import { connect } from 'react-redux'
 
-import { actionFetchData } from './actions'
+import { actionFetchData, actionFetchDataArenas } from './actions'
 import FadeInView from './components/FadeInView'
 import CardList from './components/CardList'
 import Footer from './components/Footer'
@@ -26,6 +26,7 @@ const styles = {
 class App extends React.Component {
   componentDidMount() {
     this.props.actionFetchData()
+    this.props.actionFetchDataArenas()
   }
 
   render() {
@@ -57,7 +58,8 @@ class App extends React.Component {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    actionFetchData: () => { dispatch(actionFetchData()) }
+    actionFetchData: () => { dispatch(actionFetchData()) },
+    actionFetchDataArenas: () => { dispatch(actionFetchDataArenas()) }
   }
 }
 
