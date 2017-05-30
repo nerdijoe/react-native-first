@@ -5,6 +5,9 @@ import {
   Image
 } from 'react-native'
 
+import FadeInView from './components/FadeInView'
+import CardList from './components/CardList'
+
 class App extends React.Component {
   render() {
     return (
@@ -12,10 +15,18 @@ class App extends React.Component {
         <Text>
           App
         </Text>
-        <Image
-          source={{uri: 'https://media.giphy.com/media/zdIGTIdD1mi4/giphy.gif'}}
-          style={{width:200, height: 100}}
-        />
+        <Text style={{fontSize: 28, textAlign: 'center', margin: 10}}>Fading in</Text>
+
+
+        <FadeInView style={{width: 350, height: 150, backgroundColor: 'powderblue'}}>
+            <Image
+              source={{uri: 'https://media.giphy.com/media/zdIGTIdD1mi4/giphy.gif'}}
+              style={{width:400, height: 150}}
+            />
+        </FadeInView>
+
+        <CardList/>
+
       </View>
     )
   }
