@@ -12,6 +12,7 @@ import CardList from './components/CardList'
 import Footer from './components/Footer'
 import Navbar from './components/Navbar'
 import ArenaList from './components/ArenaList'
+import CardDetail from './components/CardDetail'
 
 const styles = {
   barTitle: {
@@ -37,6 +38,8 @@ class App extends React.Component {
         <Router>
            <Scene key="cards" component={CardList} title="Cards" initial={true} navigationBarStyle={styles.barTitle} />
            <Scene key="arenas" component={ArenaList} title="Arenas" navigationBarStyle={styles.barTitle} />
+           <Scene key="cdetail" component={CardDetail} title="Card Detail" navigationBarStyle={styles.barTitle} />
+
        </Router>
 
         <Footer />
