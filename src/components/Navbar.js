@@ -30,10 +30,10 @@ class Navbar extends React.Component {
     return (
       <View style={styles.navbar}>
         <TouchableOpacity active={true} onPress={() => {this.onPressHandler('cards')}}>
-          <Text>Cards</Text>
+          <Text>カード</Text>
         </TouchableOpacity>
         <TouchableOpacity onPress={() => {this.onPressHandler('arenas')}}>
-          <Text>Arenas</Text>
+          <Text>アリーナ</Text>
         </TouchableOpacity>
       </View>
     )

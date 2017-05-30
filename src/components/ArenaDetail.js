@@ -52,23 +52,26 @@ const styles = {
 
   },
   cardImage: {
-    width: 212/2,
-    height: 263/2,
+    width: 518/2,
+    height: 539/2,
     padding: 10,
     margin: 10,
   },
 }
 
 /*
-"rarity":"Common",
-"type":"Spell",
-"name":"Arrows",
-"description":"Arrows pepper a large area, damaging everyone hit. Reduced damage to Crown Towers.",
-"arena":0,
-"elixirCost":3,
+"_id":"58d176be6d804500104b1315",
+"idName":"training-camp",
+"number":0,
+"name":"Training Camp",
+"victoryGold":0,
+"minTrophies":0,
+"order":0,
+"__v":0,
+
 */
 
-class CardDetail extends React.Component {
+class ArenaDetail extends React.Component {
   constructor(props) {
     super(props)
     console.log(this.props)
@@ -78,27 +81,18 @@ class CardDetail extends React.Component {
     return (
       <ScrollView >
         <View style={styles.container}>
-          <Text style={styles.title}>{this.props.card.name}</Text>
+          <Text style={styles.title}>{this.props.arena.name}</Text>
 
           <Image
             style={styles.cardImage}
-            source={{uri: `http://www.clashapi.xyz/images/cards/${this.props.card.idName}.png`}}
+            source={{uri: `http://www.clashapi.xyz/images/arenas/${this.props.arena.idName}.png`}}
           />
           <View style={styles.descContainer}>
-            <Text style={styles.subtitle}>Description</Text>
-            <Text>{this.props.card.description}</Text>
+            <Text style={styles.subtitle}>Victory Gold</Text>
+            <Text>{this.props.arena.victoryGold}</Text>
 
-            <Text style={styles.subtitle}>Arena</Text>
-            <Text>{this.props.card.arena}</Text>
-
-            <Text style={styles.subtitle}>Rarity</Text>
-            <Text>{this.props.card.rarity}</Text>
-
-            <Text style={styles.subtitle}>Type</Text>
-            <Text>{this.props.card.type}</Text>
-
-            <Text style={styles.subtitle}>Elixir Cost</Text>
-            <Text>{this.props.card.elixirCost}</Text>
+            <Text style={styles.subtitle}>Minimum Trophies</Text>
+            <Text>{this.props.arena.minTrophies}</Text>
 
           </View>
         </View>
@@ -107,4 +101,4 @@ class CardDetail extends React.Component {
   }
 }
 
-export default CardDetail
+export default ArenaDetail

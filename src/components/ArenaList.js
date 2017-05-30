@@ -9,7 +9,7 @@ import {
   FlatList,
   ScrollView
 } from 'react-native'
-
+import { Actions } from 'react-native-router-flux'
 
 const styles = {
   cardImage: {
@@ -22,8 +22,9 @@ const styles = {
     marginTop: 50,
     marginBottom: 30,
     flexWrap: 'wrap',
-
-
+    flexDirection:'row',
+    justifyContent: 'center',
+    alignItems: 'center'
   },
   card: {
     backgroundColor: 'white',
@@ -31,7 +32,8 @@ const styles = {
     margin: 5,
     borderRadius: 8,
     borderStyle: 'solid',
-    borderWidth: 1
+    borderWidth: 0,
+    alignItems: 'center'
 
   },
   cardDesc: {
@@ -41,22 +43,28 @@ const styles = {
 }
 
 class ArenaList extends React.Component {
+  onPressHandler(arena) {
+    console.log("onPressHandler card_id=" + arena._id)
+    Actions.adetail({arena: arena})
+  }
 
   render() {
     return (
-      <View style={{flex: 1}}>
-        <ScrollView style={styles.container}>
-        {this.props.arenas.map( arena => {
-          return (
-            <TouchableOpacity key={arena._id} style={styles.card}>
-              <Image
-                style={styles.cardImage}
-                source={{uri: `http://www.clashapi.xyz/images/arenas/${arena.idName}.png`}}
-              />
-              <Text style={styles.cardDesc}>{arena.name}</Text>
-            </TouchableOpacity>
-          )
-        })}
+      <View style={{flex: 1}} >
+        <ScrollView >
+          <View style={styles.container}>
+            {this.props.arenas.map( arena => {
+              return (
+                <TouchableOpacity key={arena._id} style={styles.card} onPress={() => {this.onPressHandler(arena)}}>
+                  <Image
+                    style={styles.cardImage}
+                    source={{uri: `http://www.clashapi.xyz/images/arenas/${arena.idName}.png`}}
+                  />
+                  <Text style={styles.cardDesc}>{arena.name}</Text>
+                </TouchableOpacity>
+              )
+            })}
+          </View>
         </ScrollView>
       </View>
 

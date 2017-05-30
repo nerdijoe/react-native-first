@@ -8,6 +8,7 @@ import App from './src/App'
 import store from './src/store/manageStore'
 
 export default class reactnativefirst extends Component {
+  
   render() {
     return (
       <Provider store={store}>
