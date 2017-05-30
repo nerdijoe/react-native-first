@@ -19,6 +19,7 @@ const styles = {
   container: {
     display: 'flex',
     padding: 20,
+  
   },
   card: {
     backgroundColor: 'white',
