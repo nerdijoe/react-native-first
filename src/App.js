@@ -2,7 +2,8 @@ import React from 'react'
 import {
   View,
   Text,
-  Image
+  Image,
+  StatusBar
 } from 'react-native'
 import { Router, Scene } from 'react-native-router-flux';
 import { connect } from 'react-redux'
@@ -10,6 +11,7 @@ import { connect } from 'react-redux'
 import { actionFetchData, actionFetchDataArenas } from './actions'
 import FadeInView from './components/FadeInView'
 import CardList from './components/CardList'
+import CardListV2 from './components/CardListV2'
 import Footer from './components/Footer'
 import Navbar from './components/Navbar'
 import ArenaList from './components/ArenaList'
@@ -32,7 +34,10 @@ class App extends React.Component {
   render() {
     return (
       <View style={{flex: 1}}>
-
+        <StatusBar
+          backgroundColor="#F6F6F6"
+          barStyle="dark-content"
+        />
         <FadeInView style={{ width: '100%', height: '25%', backgroundColor: 'powderblue'}}>
             <Image
               source={{uri: 'http://descargarclashroyalegratis.net/wp-content/uploads/2016/04/clash-min.jpg'}}
@@ -44,6 +49,7 @@ class App extends React.Component {
 
         <Router>
            <Scene key="cards" component={CardList} title="Cards" initial={true} navigationBarStyle={styles.barTitle} />
+           <Scene key="cards2" component={CardListV2} title="Cards with ListView"  navigationBarStyle={styles.barTitle} />
            <Scene key="arenas" component={ArenaList} title="Arenas" navigationBarStyle={styles.barTitle} />
            <Scene key="cdetail" component={CardDetail} title="Card Detail" navigationBarStyle={styles.barTitle} />
            <Scene key="adetail" component={ArenaDetail} title="Arena Detail" navigationBarStyle={styles.barTitle} />

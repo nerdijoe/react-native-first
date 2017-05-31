@@ -8,6 +8,7 @@ import {
 const styles = {
   myFooter: {
     display: 'flex',
+    // backgroundColor: '#F6F6F6',
     margin: 5,
     padding: 3,
     flexDirection: 'row',

@@ -22,6 +22,8 @@ class Navbar extends React.Component {
     console.log("onPress " + key)
     if(key === 'cards')
       Actions.cards()
+    else if(key === 'cards2')
+      Actions.cards2()
     else
       Actions.arenas()
   }
@@ -31,6 +33,9 @@ class Navbar extends React.Component {
       <View style={styles.navbar}>
         <TouchableOpacity active={true} onPress={() => {this.onPressHandler('cards')}}>
           <Text>カード</Text>
+        </TouchableOpacity>
+        <TouchableOpacity onPress={() => {this.onPressHandler('cards2')}}>
+          <Text>カード2</Text>
         </TouchableOpacity>
         <TouchableOpacity onPress={() => {this.onPressHandler('arenas')}}>
           <Text>アリーナ</Text>
