@@ -48,11 +48,12 @@ const styles = {
   }
 }
 
+const ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
 class CardList extends React.Component {
   constructor(props) {
     super(props)
 
-    const ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
+
     this.state = {
       dataSource: ds.cloneWithRows(this.props.cards),
     };
@@ -60,11 +61,12 @@ class CardList extends React.Component {
 
   }
 
+//dataSource: this.state.dataSource.cloneWithRowsAndSections(nextProps.cards)
   componentWillReceiveProps(nextProps) {
     console.log("componentWillReceiveProps",nextProps.cards)
     if (nextProps.cards !== this.props.cards) {
       this.setState({
-        dataSource: this.state.dataSource.cloneWithRowsAndSections(nextProps.cards)
+        dataSource: ds.cloneWithRows(nextProps.cards)
       })
     }
   }

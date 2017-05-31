@@ -17,6 +17,7 @@ import Navbar from './components/Navbar'
 import ArenaList from './components/ArenaList'
 import CardDetail from './components/CardDetail'
 import ArenaDetail from './components/ArenaDetail'
+import CamCam from './components/CamCam'
 
 const styles = {
   barTitle: {
@@ -48,11 +49,14 @@ class App extends React.Component {
         <Navbar />
 
         <Router>
-           <Scene key="cards" component={CardList} title="Cards" initial={true} navigationBarStyle={styles.barTitle} />
-           <Scene key="cards2" component={CardListV2} title="Cards with ListView"  navigationBarStyle={styles.barTitle} />
+           <Scene key="cards" component={CardList} title="Cards"  navigationBarStyle={styles.barTitle} />
+           <Scene key="cards2" component={CardListV2} title="Cards with ListView" initial={true} navigationBarStyle={styles.barTitle} />
            <Scene key="arenas" component={ArenaList} title="Arenas" navigationBarStyle={styles.barTitle} />
            <Scene key="cdetail" component={CardDetail} title="Card Detail" navigationBarStyle={styles.barTitle} />
            <Scene key="adetail" component={ArenaDetail} title="Arena Detail" navigationBarStyle={styles.barTitle} />
+
+           <Scene key="camcam" component={CamCam} title="CamCam" navigationBarStyle={styles.barTitle} />
+
 
        </Router>
 
