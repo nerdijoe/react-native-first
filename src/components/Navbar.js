@@ -24,6 +24,8 @@ class Navbar extends React.Component {
       Actions.cards()
     else if(key === 'cards2')
       Actions.cards2()
+    else if(key === 'camcam')
+      Actions.camcam()
     else
       Actions.arenas()
   }
@@ -39,6 +41,9 @@ class Navbar extends React.Component {
         </TouchableOpacity>
         <TouchableOpacity onPress={() => {this.onPressHandler('arenas')}}>
           <Text>アリーナ</Text>
+        </TouchableOpacity>
+        <TouchableOpacity onPress={() => {this.onPressHandler('camcam')}}>
+          <Text>カメラ</Text>
         </TouchableOpacity>
       </View>
     )
