@@ -1,0 +1,288 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CardList renders without crashing 1`] = `
+<View
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <RCTScrollView>
+    <View>
+      <View
+        style={
+          Object {
+            "display": "flex",
+            "flexDirection": "row",
+            "flexWrap": "wrap",
+            "justifyContent": "space-around",
+            "marginBottom": 10,
+            "marginTop": 40,
+            "padding": 20,
+          }
+        }
+      >
+        <View
+          accessibilityComponentType={undefined}
+          accessibilityLabel={undefined}
+          accessibilityTraits={undefined}
+          accessible={true}
+          hitSlop={undefined}
+          isTVSelectable={true}
+          onLayout={undefined}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "white",
+              "borderRadius": 8,
+              "borderStyle": "solid",
+              "borderWidth": 0,
+              "flexDirection": "column",
+              "margin": 3,
+              "opacity": 1,
+            }
+          }
+          testID={undefined}
+          tvParallaxProperties={undefined}
+        >
+          <Image
+            source={
+              Object {
+                "uri": "http://www.clashapi.xyz/images/cards/arrows.png",
+              }
+            }
+            style={
+              Object {
+                "height": 65.75,
+                "width": 53,
+              }
+            }
+          />
+        </View>
+        <View
+          accessibilityComponentType={undefined}
+          accessibilityLabel={undefined}
+          accessibilityTraits={undefined}
+          accessible={true}
+          hitSlop={undefined}
+          isTVSelectable={true}
+          onLayout={undefined}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "white",
+              "borderRadius": 8,
+              "borderStyle": "solid",
+              "borderWidth": 0,
+              "flexDirection": "column",
+              "margin": 3,
+              "opacity": 1,
+            }
+          }
+          testID={undefined}
+          tvParallaxProperties={undefined}
+        >
+          <Image
+            source={
+              Object {
+                "uri": "http://www.clashapi.xyz/images/cards/bomber.png",
+              }
+            }
+            style={
+              Object {
+                "height": 65.75,
+                "width": 53,
+              }
+            }
+          />
+        </View>
+        <View
+          accessibilityComponentType={undefined}
+          accessibilityLabel={undefined}
+          accessibilityTraits={undefined}
+          accessible={true}
+          hitSlop={undefined}
+          isTVSelectable={true}
+          onLayout={undefined}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "white",
+              "borderRadius": 8,
+              "borderStyle": "solid",
+              "borderWidth": 0,
+              "flexDirection": "column",
+              "margin": 3,
+              "opacity": 1,
+            }
+          }
+          testID={undefined}
+          tvParallaxProperties={undefined}
+        >
+          <Image
+            source={
+              Object {
+                "uri": "http://www.clashapi.xyz/images/cards/archers.png",
+              }
+            }
+            style={
+              Object {
+                "height": 65.75,
+                "width": 53,
+              }
+            }
+          />
+        </View>
+        <View
+          accessibilityComponentType={undefined}
+          accessibilityLabel={undefined}
+          accessibilityTraits={undefined}
+          accessible={true}
+          hitSlop={undefined}
+          isTVSelectable={true}
+          onLayout={undefined}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "white",
+              "borderRadius": 8,
+              "borderStyle": "solid",
+              "borderWidth": 0,
+              "flexDirection": "column",
+              "margin": 3,
+              "opacity": 1,
+            }
+          }
+          testID={undefined}
+          tvParallaxProperties={undefined}
+        >
+          <Image
+            source={
+              Object {
+                "uri": "http://www.clashapi.xyz/images/cards/knight.png",
+              }
+            }
+            style={
+              Object {
+                "height": 65.75,
+                "width": 53,
+              }
+            }
+          />
+        </View>
+        <View
+          accessibilityComponentType={undefined}
+          accessibilityLabel={undefined}
+          accessibilityTraits={undefined}
+          accessible={true}
+          hitSlop={undefined}
+          isTVSelectable={true}
+          onLayout={undefined}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "white",
+              "borderRadius": 8,
+              "borderStyle": "solid",
+              "borderWidth": 0,
+              "flexDirection": "column",
+              "margin": 3,
+              "opacity": 1,
+            }
+          }
+          testID={undefined}
+          tvParallaxProperties={undefined}
+        >
+          <Image
+            source={
+              Object {
+                "uri": "http://www.clashapi.xyz/images/cards/fireball.png",
+              }
+            }
+            style={
+              Object {
+                "height": 65.75,
+                "width": 53,
+              }
+            }
+          />
+        </View>
+        <View
+          accessibilityComponentType={undefined}
+          accessibilityLabel={undefined}
+          accessibilityTraits={undefined}
+          accessible={true}
+          hitSlop={undefined}
+          isTVSelectable={true}
+          onLayout={undefined}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "alignItems": "center",
+              "backgroundColor": "white",
+              "borderRadius": 8,
+              "borderStyle": "solid",
+              "borderWidth": 0,
+              "flexDirection": "column",
+              "margin": 3,
+              "opacity": 1,
+            }
+          }
+          testID={undefined}
+          tvParallaxProperties={undefined}
+        >
+          <Image
+            source={
+              Object {
+                "uri": "http://www.clashapi.xyz/images/cards/mini-pekka.png",
+              }
+            }
+            style={
+              Object {
+                "height": 65.75,
+                "width": 53,
+              }
+            }
+          />
+        </View>
+      </View>
+    </View>
+  </RCTScrollView>
+</View>
+`;

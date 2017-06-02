@@ -13,7 +13,7 @@ export const fetchData = (cards) => {
 export const actionFetchData = () => {
 
   return(dispatch) => {
-    console.log('actionFetchData');
+    // console.log('actionFetchData');
     fetch('http://www.clashapi.xyz/api/cards')
     .then( res => res.json() )
     .then (res => {

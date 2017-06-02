@@ -4,15 +4,17 @@
   "private": true,
   "scripts": {
     "start": "node node_modules/react-native/local-cli/cli.js start",
-    "test": "jest"
+    "test": "jest "
   },
   "dependencies": {
     "react": "16.0.0-alpha.6",
+    "react-dom": "^15.5.4",
     "react-native": "0.44.2",
     "react-native-camera": "git+https://github.com/lwansbrough/react-native-camera.git",
     "react-native-router-flux": "^3.39.2",
     "react-redux": "^5.0.5",
     "react-router-dom": "^4.1.1",
+    "react-test-renderer": "^16.0.0-alpha.6",
     "redux": "^3.6.0",
     "redux-logger": "^3.0.6",
     "redux-thunk": "^2.2.0"
@@ -24,6 +26,7 @@
     "react-test-renderer": "16.0.0-alpha.6"
   },
   "jest": {
-    "preset": "react-native"
+    "preset": "react-native",
+    "setupFiles": ["./src/test/setup.js"]
   }
 }

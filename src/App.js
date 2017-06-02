@@ -26,7 +26,7 @@ const styles = {
   }
 }
 
-class App extends React.Component {
+export class App extends React.Component {
   componentDidMount() {
     this.props.actionFetchData()
     this.props.actionFetchDataArenas()
