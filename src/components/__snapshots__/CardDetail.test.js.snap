@@ -1,0 +1,168 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CardDetail renders without crashing 1`] = `
+<RCTScrollView>
+  <View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "display": "flex",
+          "flex": 1,
+          "flexDirection": "column",
+          "flexWrap": "nowrap",
+          "marginBottom": 30,
+          "marginTop": 40,
+          "padding": 20,
+        }
+      }
+    >
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "fontSize": 25,
+            "fontWeight": "bold",
+          }
+        }
+      >
+        Arrows
+      </Text>
+      <Image
+        source={
+          Object {
+            "uri": "http://www.clashapi.xyz/images/cards/arrows.png",
+          }
+        }
+        style={
+          Object {
+            "height": 131.5,
+            "margin": 10,
+            "padding": 10,
+            "width": 106,
+          }
+        }
+      />
+      <View
+        style={
+          Object {
+            "borderRadius": 8,
+            "borderStyle": "solid",
+            "borderWidth": 1,
+            "margin": 10,
+            "padding": 10,
+          }
+        }
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Object {
+              "fontSize": 10,
+              "fontWeight": "bold",
+              "marginTop": 5,
+            }
+          }
+        >
+          Description
+        </Text>
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+        >
+          Arrows pepper a large area, damaging everyone hit. Reduced damage to Crown Towers.
+        </Text>
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Object {
+              "fontSize": 10,
+              "fontWeight": "bold",
+              "marginTop": 5,
+            }
+          }
+        >
+          Arena
+        </Text>
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+        >
+          0
+        </Text>
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Object {
+              "fontSize": 10,
+              "fontWeight": "bold",
+              "marginTop": 5,
+            }
+          }
+        >
+          Rarity
+        </Text>
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+        >
+          Common
+        </Text>
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Object {
+              "fontSize": 10,
+              "fontWeight": "bold",
+              "marginTop": 5,
+            }
+          }
+        >
+          Type
+        </Text>
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+        >
+          Spell
+        </Text>
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Object {
+              "fontSize": 10,
+              "fontWeight": "bold",
+              "marginTop": 5,
+            }
+          }
+        >
+          Elixir Cost
+        </Text>
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+        >
+          3
+        </Text>
+      </View>
+    </View>
+  </View>
+</RCTScrollView>
+`;

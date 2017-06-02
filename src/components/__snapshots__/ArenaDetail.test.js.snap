@@ -1,0 +1,105 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ArenaDetail renders without crashing 1`] = `
+<RCTScrollView>
+  <View>
+    <View
+      style={
+        Object {
+          "alignItems": "center",
+          "display": "flex",
+          "flex": 1,
+          "flexDirection": "column",
+          "flexWrap": "nowrap",
+          "marginBottom": 30,
+          "marginTop": 40,
+          "padding": 20,
+        }
+      }
+    >
+      <Text
+        accessible={true}
+        allowFontScaling={true}
+        ellipsizeMode="tail"
+        style={
+          Object {
+            "fontSize": 25,
+            "fontWeight": "bold",
+          }
+        }
+      >
+        Training Camp
+      </Text>
+      <Image
+        source={
+          Object {
+            "uri": "http://www.clashapi.xyz/images/arenas/training-camp.png",
+          }
+        }
+        style={
+          Object {
+            "height": 269.5,
+            "margin": 10,
+            "padding": 10,
+            "width": 259,
+          }
+        }
+      />
+      <View
+        style={
+          Object {
+            "borderRadius": 8,
+            "borderStyle": "solid",
+            "borderWidth": 1,
+            "margin": 10,
+            "padding": 10,
+          }
+        }
+      >
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Object {
+              "fontSize": 10,
+              "fontWeight": "bold",
+              "marginTop": 5,
+            }
+          }
+        >
+          Victory Gold
+        </Text>
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+        >
+          0
+        </Text>
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+          style={
+            Object {
+              "fontSize": 10,
+              "fontWeight": "bold",
+              "marginTop": 5,
+            }
+          }
+        >
+          Minimum Trophies
+        </Text>
+        <Text
+          accessible={true}
+          allowFontScaling={true}
+          ellipsizeMode="tail"
+        >
+          0
+        </Text>
+      </View>
+    </View>
+  </View>
+</RCTScrollView>
+`;

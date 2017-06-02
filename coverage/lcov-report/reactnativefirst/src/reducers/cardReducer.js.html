@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for reactnativefirst/src/reducers/cardReducer.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../prettify.css" />
+    <link rel="stylesheet" href="../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../index.html">All files</a> / <a href="index.html">reactnativefirst/src/reducers</a> cardReducer.js
+    </h1>
+    <div class='clearfix'>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">80% </span>
+        <span class="quiet">Statements</span>
+        <span class='fraction'>4/5</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">66.67% </span>
+        <span class="quiet">Branches</span>
+        <span class='fraction'>2/3</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">100% </span>
+        <span class="quiet">Functions</span>
+        <span class='fraction'>1/1</span>
+      </div>
+      <div class='fl pad1y space-right2'>
+        <span class="strong">80% </span>
+        <span class="quiet">Lines</span>
+        <span class='fraction'>4/5</span>
+      </div>
+    </div>
+  </div>
+  <div class='status-line high'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">9x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import {
+  FETCH_DATA
+} from '../actions/constants'
+&nbsp;
+const initialState = {
+  data: [
+    {
+      "_id":"58d176a56d804500104b1248",
+      "idName":"arrows",
+      "rarity":"Common",
+      "type":"Spell",
+      "name":"Arrows",
+      "description":"Arrows pepper a large area, damaging everyone hit. Reduced damage to Crown Towers.",
+      "arena":0,
+      "elixirCost":3,
+      "order":1,
+      "__v":0
+    },
+    {"_id":"58d176a56d804500104b124e","idName":"bomber","rarity":"Common","type":"Troop","name":"Bomber","description":"Small, lightly protected skeleton that throws bombs. Deals area damage that can wipe out a swarm of enemies.","arena":0,"elixirCost":3,"order":2,"__v":0},
+    {"_id":"58d176a56d804500104b125b","idName":"archers","rarity":"Common","type":"Troop","name":"Archers","description":"A pair of unarmored ranged attackers. They'll help you take down ground and air units, but you're on your own with hair coloring advice.","arena":0,"elixirCost":3,"order":3,"__v":0},
+    {"_id":"58d176a56d804500104b125d","idName":"knight","rarity":"Common","type":"Troop","name":"Knight","description":"A tough melee fighter. The Barbarian's handsome, cultured cousin. Rumor has it that he was knighted based on the sheer awesomeness of his mustache alone.","arena":0,"elixirCost":3,"order":4,"__v":0},
+    {"_id":"58d176a56d804500104b1257","idName":"fireball","rarity":"Rare","type":"Spell","name":"Fireball","description":"Annnnnd... Fireball. Incinerates a small area, dealing high damage. Reduced damage to Crown Towers.","arena":0,"elixirCost":4,"order":5,"__v":0},
+    {"_id":"58d176a56d804500104b1253","idName":"mini-pekka","rarity":"Rare","type":"Troop","name":"Mini P.E.K.K.A.","description":"The Arena is a certified butterfly-free zone. No distractions for P.E.K.K.A., only destruction.","arena":0,"elixirCost":4,"order":6,"__v":0},
+    
+  ]
+}
+&nbsp;
+const cardReducer = (state=initialState, action) =&gt; {
+  switch(action.type) {
+<span class="branch-0 cbranch-no" title="branch not covered" >    case FETCH_DATA: {</span>
+<span class="cstat-no" title="statement not covered" >      return {...state, data: action.cards}</span>
+    }
+    default: return state
+  }
+}
+&nbsp;
+&nbsp;
+export default cardReducer
+&nbsp;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Fri Jun 02 2017 12:48:07 GMT+0700 (WIB)
+</div>
+</div>
+<script src="../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../sorter.js"></script>
+</body>
+</html>

@@ -42,7 +42,7 @@ const styles = {
   }
 }
 
-class CardList extends React.Component {
+export class CardList extends React.Component {
   onPressHandler(card) {
     console.log("onPressHandler card_id=" + card._id)
     Actions.cdetail({card: card})
