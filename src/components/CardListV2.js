@@ -49,7 +49,7 @@ const styles = {
 }
 
 const ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2});
-class CardList extends React.Component {
+export class CardList extends React.Component {
   constructor(props) {
     super(props)
 

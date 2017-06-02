@@ -2,10 +2,11 @@ import React from 'react'
 import renderer from 'react-test-renderer'
 import { Provider } from 'react-redux'
 
-import ConnectedCardList, {CardList} from './CardList'
+import ConnectedCardListV2, { CardList } from './CardListV2'
 import store from '../store/manageStore'
 
-describe('CardList', () => {
+
+describe('CardListV2 ListView', () => {
   let cards = [
     {
       "_id":"58d176a56d804500104b1248",
@@ -27,7 +28,7 @@ describe('CardList', () => {
   ]
 
   it('renders without crashing', ()=> {
-    // const tree = renderer.create(<Provider store={store}><CardList cards={cards}/></Provider>)
+    // const tree = renderer.create(<Provider store={store}><ConnectedCardListV2/></Provider>)
     const tree = renderer.create(<CardList cards={cards}/>)
     expect(tree).toMatchSnapshot()
   })
