@@ -4,8 +4,7 @@ import {
   Text,
   Image,
   ScrollView
-} from 'react-native'
-
+} from 'react-native';
 
 const styles = {
 
@@ -17,9 +16,7 @@ const styles = {
     marginBottom: 30,
     flexDirection: 'column',
     flexWrap: 'nowrap',
-    alignItems: 'center',
-
-
+    alignItems: 'center'
   },
   card: {
     backgroundColor: 'white',
@@ -48,15 +45,14 @@ const styles = {
     borderStyle: 'solid',
     borderWidth: 1,
     margin: 10,
-    padding: 10,
-
+    padding: 10
   },
   cardImage: {
-    width: 518/2,
-    height: 539/2,
+    width: 518 / 2,
+    height: 539 / 2,
     padding: 10,
-    margin: 10,
-  },
+    margin: 10
+  }
 }
 
 /*
@@ -72,12 +68,12 @@ const styles = {
 */
 
 class ArenaDetail extends React.Component {
-  constructor(props) {
+  constructor (props) {
     super(props)
     console.log(this.props)
   }
 
-  render() {
+  render () {
     return (
       <ScrollView >
         <View style={styles.container}>

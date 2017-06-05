@@ -4,7 +4,6 @@ import {
   Text
 } from 'react-native'
 
-
 const styles = {
   myFooter: {
     display: 'flex',
@@ -15,14 +14,13 @@ const styles = {
     justifyContent: 'flex-end'
   },
   footerText: {
-    fontSize: 7,
+    fontSize: 7
 
   }
 }
 
 class Footer extends React.Component {
-
-  render() {
+  render () {
     return (
       <View style={styles.myFooter}>
         <Text style={styles.footerText}>© 2017, クラロワ大好きです。</Text>
