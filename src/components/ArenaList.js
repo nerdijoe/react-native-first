@@ -3,7 +3,6 @@ import { connect } from 'react-redux'
 
 import {
   View,
-  Text,
   Image,
   TouchableOpacity,
   FlatList,
@@ -13,8 +12,8 @@ import { Actions } from 'react-native-router-flux'
 
 const styles = {
   cardImage: {
-    width: 518/3,
-    height: 539/3
+    width: 518 / 3,
+    height: 539 / 3
   },
   container: {
     display: 'flex',
@@ -22,7 +21,7 @@ const styles = {
     marginTop: 50,
     marginBottom: 30,
     flexWrap: 'wrap',
-    flexDirection:'row',
+    flexDirection: 'row',
     justifyContent: 'center',
     alignItems: 'center'
   },
@@ -43,19 +42,19 @@ const styles = {
 }
 
 class ArenaList extends React.Component {
-  onPressHandler(arena) {
-    console.log("onPressHandler card_id=" + arena._id)
+  onPressHandler (arena) {
+    console.log('onPressHandler card_id=' + arena._id)
     Actions.adetail({arena: arena})
   }
 
-  render() {
+  render () {
     return (
       <View style={{flex: 1}} >
         <ScrollView >
           <View style={styles.container}>
-            {this.props.arenas.map( arena => {
+            {this.props.arenas.map(arena => {
               return (
-                <TouchableOpacity key={arena._id} style={styles.card} onPress={() => {this.onPressHandler(arena)}}>
+                <TouchableOpacity key={arena._id} style={styles.card} onPress={() => { this.onPressHandler(arena) }}>
                   <Image
                     style={styles.cardImage}
                     source={{uri: `http://www.clashapi.xyz/images/arenas/${arena.idName}.png`}}
@@ -69,7 +68,6 @@ class ArenaList extends React.Component {
       </View>
 
     )
-
   }
 }
 
