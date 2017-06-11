@@ -3,9 +3,13 @@ import {
   View,
   Text,
   Image,
-  ScrollView
+  ScrollView,
+  Button,
+  ToastAndroid
 } from 'react-native'
 
+import SpeechAndroid from 'react-native-android-voice';
+import SpeechNotification from 'react-native-speech-notification';
 
 const styles = {
 
@@ -74,6 +78,42 @@ class CardDetail extends React.Component {
     console.log(this.props)
   }
 
+  startSpeaking () {
+    // SpeechNotification.speak({
+    //   message: 'all the small things true care truth brings',
+    //   language: 'en-US'
+    // })
+
+    SpeechNotification.notify({
+      title: 'Title',
+      icon: 'icon', // {icon}.png/.jpg must be present in each corresponding android/app/src/main/res/drawable-*dpi/ folders
+      message: 'work sucks i know',
+      language: 'en-US'
+    })
+
+  }
+
+  async _buttonClick () {
+    try{
+      // More Locales will be available upon release.
+      var spokenText = await SpeechAndroid.startSpeech('Speak yo', SpeechAndroid.US);
+      ToastAndroid.show(spokenText, ToastAndroid.LONG);
+    }catch(error){
+      switch(error){
+        case SpeechAndroid.E_VOICE_CANCELLED:
+          ToastAndroid.show("Voice Recognizer cancelled" , ToastAndroid.LONG);
+          break;
+        case SpeechAndroid.E_NO_MATCH:
+          ToastAndroid.show("No match for what you said" , ToastAndroid.LONG);
+          break;
+        case SpeechAndroid.E_SERVER_ERROR:
+          ToastAndroid.show("Google Server Error" , ToastAndroid.LONG);
+          break;
+        /*And more errors that will be documented on Docs upon release*/
+      }
+    }
+  }
+
   render() {
     return (
       <ScrollView >
@@ -101,6 +141,10 @@ class CardDetail extends React.Component {
             <Text>{this.props.card.elixirCost}</Text>
 
           </View>
+          <Button title="yo" onPress={this._buttonClick} />
+          <Button title="sup" onPress={this.startSpeaking} />
+
+
         </View>
       </ScrollView>
     )
