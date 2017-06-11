@@ -1,5 +1,10 @@
 rootProject.name = 'reactnativefirst'
+include ':react-native-speech-notification'
+project(':react-native-speech-notification').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-speech-notification/android')
 include ':react-native-camera'
 project(':react-native-camera').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-camera/android')
+
+include ':VoiceModule', ':app'
+project(':VoiceModule').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-android-voice')
 
 include ':app'
